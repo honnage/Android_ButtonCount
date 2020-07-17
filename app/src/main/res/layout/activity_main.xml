@@ -21,7 +21,7 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="418dp"
+        android:layout_width="0dp"
         android:layout_height="61dp"
         android:background="#8BC34A"
         android:onClick="showMessage"
@@ -32,7 +32,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:layout_width="416dp"
+        android:layout_width="0dp"
         android:layout_height="61dp"
         android:background="#8BC34A"
         android:onClick="countUp"
