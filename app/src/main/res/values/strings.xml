@@ -2,5 +2,6 @@
     <string name="app_name">HelloToast</string>
     <string name="str_zero">0</string>
     <string name="str_toast">Toast</string>
-    <string name="str_count">Count</string>
+    <string name="str_countUp">CountUp</string>
+    <string name="str_countDown">CountDown</string>
 </resources>

@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:text="@string/str_zero"
         android:textColor="#E91E63"
-        android:textSize="180sp"
+        android:textSize="150sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -33,13 +33,31 @@
 
     <Button
         android:layout_width="0dp"
-        android:layout_height="61dp"
-        android:background="#8BC34A"
-        android:onClick="countUp"
-        android:text="@string/str_count"
+        android:layout_height="70dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:background="#F40A5A"
+        android:onClick="countDown"
+        android:text="@string/str_countDown"
+        android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/txtNumDisplay" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="#0D76CA"
+        android:onClick="countUp"
+        android:text="@string/str_countUp"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txtNumDisplay"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

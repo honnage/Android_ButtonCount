@@ -10,6 +10,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     private int num = 0;
     private TextView tvNum;
+    private View v;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,13 @@ public class MainActivity extends AppCompatActivity {
     public void countUp(View v) {
         String strNum;
         num++;
+        strNum = Integer.toString(num);
+        tvNum.setText(strNum);
+    }
+
+    public void countDown(View v) {
+        String strNum;
+        num--;
         strNum = Integer.toString(num);
         tvNum.setText(strNum);
     }
