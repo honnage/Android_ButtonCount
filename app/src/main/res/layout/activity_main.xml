@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:text="@string/str_zero"
         android:textColor="#E91E63"
-        android:textSize="180sp"
+        android:textSize="200sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -32,14 +32,27 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:layout_width="0dp"
-        android:layout_height="61dp"
-        android:background="#8BC34A"
+        android:id="@+id/button4"
+        android:layout_width="186dp"
+        android:layout_height="64dp"
+        android:background="#0D76CA"
         android:onClick="countUp"
-        android:text="@string/str_count"
+        android:text="@string/str_countUp"
+        android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="187dp"
+        android:layout_height="62dp"
+        android:background="#F40A5A"
+        android:onClick="countDown"
+        android:text="@string/str_countDown"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
