@@ -38,4 +38,11 @@ public class MainActivity extends AppCompatActivity {
         strNum = Integer.toString(num);
         tvNum.setText(strNum);
     }
+
+    public void reset(View v){
+        String strNum;
+        num = 0;
+        strNum = Integer.toString(num);
+        tvNum.setText(strNum);
+    }
 }

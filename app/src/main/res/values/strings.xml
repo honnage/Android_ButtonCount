@@ -4,4 +4,5 @@
     <string name="str_toast">Toast</string>
     <string name="str_countUp">CountUp</string>
     <string name="str_countDown">CountDown</string>
+    <string name="str_Reset">Reset</string>
 </resources>
