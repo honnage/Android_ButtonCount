@@ -1,7 +1,9 @@
 package com.example.hellotoast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -18,6 +20,23 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         tvNum = findViewById(R.id.txtNumDisplay);
+        if (savedInstanceState != null){
+            if(savedInstanceState.getBoolean("RESUME") == true){
+                num = savedInstanceState.getInt("COUNT");
+                String strNum = Integer.toString(num);
+                tvNum.setText(strNum);
+            }
+        }
+    }
+
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        if (num != 0 ){
+            outState.putInt("COUNT",num);
+            outState.putBoolean("RESUME",true);
+        }
     }
 
     public void showMessage(View v) {
